@@ -1,4 +1,4 @@
-# #7DaysOfCode - Lógica de Programación
+## 7DaysOfCode - Lógica de Programación
 
 ¡Bienvenidos a mi repositorio de soluciones para el desafío #7DaysOfCode! 🎉
 
@@ -8,9 +8,9 @@ Este repositorio contiene las soluciones a los desafíos diarios de lógica de p
 
 ## Estructura del Repositorio
 
-El repositorio está organizado en una soal carpeta con un script por días. Cada script contiene:
+El repositorio está organizado en una sola carpeta con un script por días. Cada script contiene:
 
-- **Descripción del Desafío:** Un archivo `README.md` específico del día con una descripción detallada del desafío.
+- **Descripción del Desafío:** descripción detallada del desafío.
 - **Solución:** El código fuente que resuelve el desafío del día.
 
 ```plaintext
@@ -24,9 +24,11 @@ El repositorio está organizado en una soal carpeta con un script por días. Cad
  ├── 6daysofcode.js
  ├── 7daysofcode.js
  ├── index.html
+```
 
 ## Conecta Conmigo
 
-GitHub: https://github.com/jfajaime
-LinkedIn: www.linkedin.com/in/fernando-jaime
+- GitHub: www.github/jfajaime
+- LinkedIn: www.linkedin.com/in/fernando-jaime
+  
 ¡Gracias por visitar mi repositorio! Espero que encuentres útiles estas soluciones y que te animes a participar en el desafío #7DaysOfCode. 🚀
