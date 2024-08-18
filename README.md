@@ -28,7 +28,7 @@ El repositorio está organizado en una sola carpeta con un script por días. Cad
 
 ## Conecta Conmigo
 
-- GitHub: www.github/jfajaime
+- GitHub: www.github.com/jfajaime
 - LinkedIn: www.linkedin.com/in/fernando-jaime
   
 ¡Gracias por visitar mi repositorio! Espero que encuentres útiles estas soluciones y que te animes a participar en el desafío #7DaysOfCode. 🚀
