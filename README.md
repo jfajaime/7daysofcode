@@ -16,19 +16,22 @@ El repositorio está organizado en una sola carpeta con un script por días. Cad
 ```plaintext
 📂 7daysofcode
  ├── README.md
- ├── 1daysofcode.js
- ├── 2daysofcode.js
- ├── 3daysofcode.js
- ├── 4daysofcode.js
- ├── 5daysofcode.js
- ├── 6daysofcode.js
- ├── 7daysofcode.js
  ├── index.html
+ ├── styles.css
+ ├──📂script
+     ├──1daysofcode.js
+     ├── 2daysofcode.js
+     ├── 3daysofcode.js
+     ├── 4daysofcode.js
+     ├── 5daysofcode.js
+     ├── 6daysofcode.js
+     ├── 7daysofcode.js
+     ├── main.js 
 ```
 
 ## Conecta Conmigo
 
-- GitHub: www.github.com/jfajaime
+- GitHub: [www.github.com/jfajaime](https://github.com/jfajaime)
 - LinkedIn: www.linkedin.com/in/fernando-jaime
   
 ¡Gracias por visitar mi repositorio! Espero que encuentres útiles estas soluciones y que te animes a participar en el desafío #7DaysOfCode. 🚀
