@@ -28,31 +28,35 @@
                 <li>let stringDiez = '10'</li>
                 <li>if (COMPARAR numeroUn y stringUn) {
                     console.log('Las variables numeroUn y stringUn tienen el mismo valor, pero tipos diferentes')</li>
-                    <li>
-                } else {</li>
-                    <li>
-                    console.log('Las variables numeroUn y stringUn no tienen el mismo valor')
-                }</li>
                 <li>
-                if (COMPARAR numeroTreinta y stringTreinta) {
+                    } else {</li>
+                <li>
+                    console.log('Las variables numeroUn y stringUn no tienen el mismo valor')
+                    }</li>
+                <li>
+                    if (COMPARAR numeroTreinta y stringTreinta) {
                     console.log('Las variables numeroTreinta y stringTreinta tienen el mismo valor y el mismo tipo')
                 </li>
                 <li>
-                } else {</li>
-                    <li>console.log('Las variables numeroTreinta y stringTreinta no tienen el mismo tipo')
-                }</li>
+                    } else {</li>
+                <li>console.log('Las variables numeroTreinta y stringTreinta no tienen el mismo tipo')
+                    }</li>
                 <li>
-                if (COMPARAR numeroDiez y stringDiez) {
-                    console.log('Las variables numeroDiez y stringDiez tienen el mismo valor, pero tipos diferentes')</li>
-                    <li>
-                } else {</li>
-                    <li>
+                    if (COMPARAR numeroDiez y stringDiez) {
+                    console.log('Las variables numeroDiez y stringDiez tienen el mismo valor, pero tipos diferentes')
+                </li>
+                <li>
+                    } else {</li>
+                <li>
                     console.log('Las variables numeroDiez y stringDiez no tienen el mismo valor')}</li>
-                </ul>
-                    
+            </ul>
+
         </section>
         <section class="challenge" id="dia2">
             <h2>Desafío Día 2</h2>
+            <h6>TOCA CUALQUIER PARTE DE LA TARJETA PARA VER EL RESULTADO</h6>
+            <h4>Llegó la hora,! Vas a comenzar tu jornada 2 en el #7DaysOfCode</h4>
+
             <p>¿Sabes cuando te registras en un site y, justo después, al iniciar sesión, te llama por tu nombre? Eso es
                 lo que harás en el desafío de hoy. Cuando creas un sistema, site o aplicación, es común querer agregar
                 algunos toques personalizados para hacer la experiencia en tu aplicación más rica y dinámica. Hacer esto
@@ -63,9 +67,15 @@
                 básicos de construcción de cualquier sistema y son esenciales para procesar cualquier tipo de
                 información, ya sea de una persona que ha iniciado sesión en el sistema o incluso para mostrar detalles
                 de productos en un catálogo de comercio electrónico. Por eso, hoy te voy a enseñar a desarrollar un
-                programa simulando una de esas aplicaciones. Debe pedir al usuario responder 3 preguntas: - ¿Cuál es tu
-                nombre? - ¿Cuántos años tienes? - ¿Qué lenguaje de programación estás estudiando? A medida que se hagan
-                las preguntas, la persona que esté usando el programa debe responder cada una de ellas. Al final, el
+                programa simulando una de esas aplicaciones. Debe pedir al usuario responder 3 preguntas:</p>
+            <ul>
+                <li>- ¿Cuál es tu nombre?</li>
+                <li>- ¿Cuántos años tienes?</li>
+                <li>- ¿Qué lenguaje de programación estás estudiando?</li>
+            </ul>
+
+            <p>A medida que se hagan las preguntas, la persona que esté usando el programa debe responder cada una de
+                ellas. Al final, el
                 sistema mostrará el mensaje: "Hola [nombre], tienes [edad] años y ya estás aprendiendo [lenguaje]!"
                 Observa que cada información entre [ ] es una de las respuestas dadas por la persona. EJERCICIO
                 OPCIONAL: Si deseas profundizar en el tema de hoy, tengo otro ejercicio para ti. Pero es 100% opcional.
@@ -77,6 +87,69 @@
         </section>
         <section class="challenge" id="dia3">
             <h2>Desafío Día 3</h2>
+            <h6>TOCA CUALQUIER PARTE DE LA TARJETA PARA VER EL RESULTADO</h6>
+            <h4>Llegó la hora,! Vas a comenzar tu jornada 3 en el #7DaysOfCode</h4>
+            <p>¿Alguna vez has jugado un juego que te dé más de una opción y, dependiendo de lo que elijas, el destino
+                del personaje sea completamente diferente?.</p>
+            <p>Hoy vas a desarrollar un ejemplo así con Javascript.</p>
+            <p>Quiero que trabajes con estructuras de control de flujo. Esta forma complicada de decirlo significa que,
+                al igual que en los juegos, la historia que desarrolles debe adaptarse a las respuestas dadas por quien
+                está jugando.</p>
+            <p>Para ello, necesitarás algunas estructuras capaces de alterar el flujo de la aplicación, como for, while,
+                if y else. Todas estas pueden cumplir con este objetivo, dada una cierta condición.</p>
+            <p>El if y el else, que ya te he mostrado en los últimos días, son capaces de crear ramificaciones dentro de
+                la aplicación para que se tome una u otra acción, dependiendo de la condición proporcionada.</p>
+            <p>Los bucles (como for y while) son capaces de transformar una tarea repetitiva en pocas líneas de código,
+                sin importar cuántas veces necesites repetir esa tarea.</p>
+            <p>Tu desafío de hoy es crear los destinos posibles de un juego, en el que el usuario pueda elegir:</p>
+            <ul>
+                <li>1- Si quiere seguir hacia el área de Front-End o seguir hacia el área de Back-End.                    
+                </li>
+                <li>2- Si está en el área de Front-End, si quiere aprender React o aprender Vue. Si está en el área de
+                    Back-End, podrá aprender C# o aprender Java.
+                </li>
+                <li>3- Después, independientemente de las elecciones anteriores, el usuario podrá elegir entre seguir
+                    especializándose en el área elegida o desarrollarse para convertirse en Fullstack. Debes mostrar en
+                    pantalla un mensaje específico para cada elección.
+                </li>
+                <li>4- Finalmente, pregunta en qué tecnologías le gustaría a la persona especializarse o conocer. Aquí,
+                    la persona puede responder N tecnologías, una a la vez. Entonces, mientras continúe respondiendo
+                    **ok** a la pregunta: "¿Hay alguna otra tecnología que te gustaría aprender?", sigue presentando el
+                    Prompt, para que complete el nombre de la tecnología en cuestión. Y, justo después, presenta un
+                    mensaje comentando algo sobre la tecnología ingresada.
+                </li>
+            </ul>
+            <p>Lo importante es que la persona que esté jugando siempre pueda elegir qué decisión tomar para aprender y
+                desarrollarse en el área de programación.</p>
+            <p>Además, también es esencial que, al final del juego, pueda ingresar tantas tecnologías como desee en la
+                lista de aprendizaje.</p>
+
+        </section>
+        <section class="challenge" id="dia3">
+            <h2>Desafío Día 4</h2>
+            <h6>TOCA CUALQUIER PARTE DE LA TARJETA PARA VER EL RESULTADO</h6>
+            <h4>Llegó la hora,! Vas a comenzar tu jornada 4 en el #7DaysOfCode</h4>
+            <p>Descripción del desafío del tercer día.</p>
+
+        </section>
+        <section class="challenge" id="dia3">
+            <h2>Desafío Día 5</h2>
+            <h6>TOCA CUALQUIER PARTE DE LA TARJETA PARA VER EL RESULTADO</h6>
+            <h4>Llegó la hora,! Vas a comenzar tu jornada 5 en el #7DaysOfCode</h4>
+            <p>Descripción del desafío del tercer día.</p>
+
+        </section>
+        <section class="challenge" id="dia3">
+            <h2>Desafío Día 6</h2>
+            <h6>TOCA CUALQUIER PARTE DE LA TARJETA PARA VER EL RESULTADO</h6>
+            <h4>Llegó la hora,! Vas a comenzar tu jornada 6 en el #7DaysOfCode</h4>
+            <p>Descripción del desafío del tercer día.</p>
+
+        </section>
+        <section class="challenge" id="dia3">
+            <h2>Desafío Día 7</h2>
+            <h6>TOCA CUALQUIER PARTE DE LA TARJETA PARA VER EL RESULTADO</h6>
+            <h4>Llegó la hora,! Vas a comenzar tu jornada 7 en el #7DaysOfCode</h4>
             <p>Descripción del desafío del tercer día.</p>
 
         </section>

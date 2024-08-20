@@ -50,5 +50,5 @@ function showAlert(message) {
         alertBox.remove();
         isAlertVisible = false;
         showNextAlert();
-    }, 7000);
+    }, 5000);
 }
