@@ -46,6 +46,13 @@ function showAlert(message) {
     alertBox.textContent = message;
     document.body.appendChild(alertBox);
 
+     // Agregar evento de clic para cerrar la alerta
+     alertBox.addEventListener('click', () => {
+        alertBox.remove();
+        isAlertVisible = false;
+        showNextAlert();
+    });
+
     setTimeout(() => {
         alertBox.remove();
         isAlertVisible = false;
