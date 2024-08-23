@@ -15,9 +15,9 @@ document.getElementById('dia4').addEventListener('click', function() {
 document.getElementById('dia5').addEventListener('click', function() {
     loadScript('scripts/5daysofcode.js');
 });
-// document.getElementById('dia6').addEventListener('click', function() {
-//     loadScript('scripts/6daysofcode.js');
-// });
+document.getElementById('dia6').addEventListener('click', function() {
+    loadScript('scripts/6daysofcode.js');
+});
 // document.getElementById('dia7').addEventListener('click', function() {
 //     loadScript('scripts/7daysofcode.js');
 // });

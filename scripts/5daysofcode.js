@@ -11,12 +11,19 @@ let listaSupermercado = {
     "4": [],
     "5": []
 };
+let nombresRubros = {
+    "1": "Frutas y Verduras",
+    "2": "Lácteos",
+    "3": "Panadería",
+    "4": "Carnes",
+    "5": "Bebidas"
+};
 
 // Función para añadir productos a la lista en el rubro seleccionado
 function agregarProducto(producto, rubro) {
     if (listaSupermercado[rubro]) {
         listaSupermercado[rubro].push(producto);
-        queueAlert(`Producto añadido: ${producto} en el rubro: ${rubro}`);
+        // queueAlert(`Producto añadido: ${producto} en el rubro: ${rubro}`);
     } else {
         queueAlert(`Rubro no válido: ${rubro}`);
     }
@@ -24,29 +31,22 @@ function agregarProducto(producto, rubro) {
 
 // Función para mostrar la lista completa
 function mostrarLista() {
-    queueAlert("Lista de supermercado:");
+    
+    let listaCompleta = '';
     for (let rubro in listaSupermercado) {
-        if (rubro==="1") {
-            queueAlert(`Rubro: FRUTAS Y VERDURAS`);            
-        }else if (rubro==="2") {
-            queueAlert(`Rubro: LACTEOS`);            
-        } else if(rubro==="3"){
-            queueAlert("Rubro: PANADERIA")
-        }else if(rubro==="4"){
-            queueAlert("Rubro: CARNICERIA")
-        }else if (rubro==="5") {
-            queueAlert("Rubro: BEBIDAS")            
+        listaCompleta += `${nombresRubros[rubro]}\n`;
+        listaCompleta += listaSupermercado[rubro].join('\n') + '\n';
         }
-        listaSupermercado[rubro].forEach(producto => {
-            queueAlert(`  - ${producto}`);
-        });
-    }
+        console.log(listaCompleta)
+    queueAlert("Lista de Supermercado");
+    queueAlert(listaCompleta);
+    
 }
 
 // Solicitar productos y rubros al usuario hasta que decida parar
 while (true) {
     let producto = prompt("Ingresa un producto (o escribe 'salir' para terminar):");
-    if (producto.toLowerCase() === 'salir'|| producto==="") {
+    if (producto.toLowerCase() == 'salir'|| producto==="") {
         break;
     }
     let rubro = prompt(`Ingresa el rubro para ${producto} (Frutas y Verduras=1, Lácteos=2, Panadería=3, Carnes=4, Bebidas=5):`);
