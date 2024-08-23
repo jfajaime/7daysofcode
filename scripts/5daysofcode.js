@@ -1,62 +1,59 @@
 let alertQueue = [];
 let isAlertVisible = false;
 
-let frutas = [];
-let lacteos = [];
-let carnes = [];
-let verduras = [];
-let producto = "";
-let categoria = "";
-
-let continuar = true;
-
-function isValidCategory(category) {
-    return [1, 2, 3, 4].includes(category);
-}
 
 
+// Crear una matriz de supermercado con rubros predefinidos
+let listaSupermercado = {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": []
+};
 
-function agregarProducto() {
-    producto = prompt("¿Qué producto deseas agregar?");
-    categoria = parseInt(prompt("¿De qué categoría es el producto? frutas:1 ; lacteos:2 ; carnes:3 ; verduras:4"));
-
-
-    switch (categoria) {
-        case 1:
-            frutas.push(producto);
-            break;
-        case 2:
-            lacteos.push(producto);
-            break;
-        case 3:
-            carnes.push(producto);
-            break;
-        case 4:
-            verduras.push(producto);
-            break;
-        default:
-            queueAlert("Categoría no válida");break
-    }
-
-}
-
-
-function mostrarLista() {
-    queueAlert(`Lista de compras:\n  Frutas: ${frutas}\n  Lácteos: ${lacteos}\n  Carnes: ${carnes}\n  Verduras: ${verduras}`);
-    console.log(`Lista de compras:\n  Frutas: ${frutas}\n  Lácteos: ${lacteos}\n  Carnes: ${carnes}\n  Verduras: ${verduras}`);
-}
-
-while (continuar) {
-    let respuesta = prompt("¿Deseas agregar un producto a la lista de compras? Responde 'sí' o 'no'.");
-    console.log(respuesta)
-
-    if (respuesta === "1") {
-        agregarProducto();
+// Función para añadir productos a la lista en el rubro seleccionado
+function agregarProducto(producto, rubro) {
+    if (listaSupermercado[rubro]) {
+        listaSupermercado[rubro].push(producto);
+        queueAlert(`Producto añadido: ${producto} en el rubro: ${rubro}`);
     } else {
-        continuar = false;
+        queueAlert(`Rubro no válido: ${rubro}`);
     }
 }
 
+// Función para mostrar la lista completa
+function mostrarLista() {
+    queueAlert("Lista de supermercado:");
+    for (let rubro in listaSupermercado) {
+        if (rubro==="1") {
+            queueAlert(`Rubro: FRUTAS Y VERDURAS`);            
+        }else if (rubro==="2") {
+            queueAlert(`Rubro: LACTEOS`);            
+        } else if(rubro==="3"){
+            queueAlert("Rubro: PANADERIA")
+        }else if(rubro==="4"){
+            queueAlert("Rubro: CARNICERIA")
+        }else if (rubro==="5") {
+            queueAlert("Rubro: BEBIDAS")            
+        }
+        listaSupermercado[rubro].forEach(producto => {
+            queueAlert(`  - ${producto}`);
+        });
+    }
+}
+
+// Solicitar productos y rubros al usuario hasta que decida parar
+while (true) {
+    let producto = prompt("Ingresa un producto (o escribe 'salir' para terminar):");
+    if (producto.toLowerCase() === 'salir'|| producto==="") {
+        break;
+    }
+    let rubro = prompt(`Ingresa el rubro para ${producto} (Frutas y Verduras=1, Lácteos=2, Panadería=3, Carnes=4, Bebidas=5):`);
+    agregarProducto(producto, rubro);
+}
+
+// Mostrar la lista final
 mostrarLista();
 queueAlert("Desafío Día 5 completado");
 
@@ -96,4 +93,3 @@ function showAlert(message) {
         showNextAlert();
     }, 5000);
 }
-
