@@ -18,9 +18,9 @@ document.getElementById('dia5').addEventListener('click', function() {
 document.getElementById('dia6').addEventListener('click', function() {
     loadScript('scripts/6daysofcode.js');
 });
-// document.getElementById('dia7').addEventListener('click', function() {
-//     loadScript('scripts/7daysofcode.js');
-// });
+document.getElementById('dia7').addEventListener('click', function() {
+    loadScript('scripts/7daysofcode.js');
+});
 
 // Función para cargar y ejecutar un script
 function loadScript(url) {
